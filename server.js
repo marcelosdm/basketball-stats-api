@@ -15,7 +15,7 @@ app.use(cors());
 // requireDir('./src/models');
 
 mongoose.connect(
-  'mongodb:basketball-admin:LbmyqFhrMeibdE6@ds123675.mlab.com:23675',
+  'mongodb://basketball-admin:LbmyqFhrMeibdE6@ds123675.mlab.com:23675/basketball-api',
   {
     useNewUrlParser: true
   }
