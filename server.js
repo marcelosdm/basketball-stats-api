@@ -14,7 +14,7 @@ app.use(cors());
 // });
 // requireDir('./src/models');
 
-mongoose.connect('mongodb://ds123675.mlab.com:23675/basketballdb', {
+mongoose.connect('mongodb://ds123675.mlab.com:23675', {
   useNewUrlParser: true
 });
 requireDir('./src/models');
