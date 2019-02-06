@@ -14,12 +14,10 @@ app.use(cors());
 // });
 // requireDir('./src/models');
 
-mongoose.connect(
-  'mongodb://basketball-admin:LbmyqFhrMeibdE6@ds123675.mlab.com:23675/basketball-api',
-  {
-    useNewUrlParser: true
-  }
-);
+const url = process.env.DATABASE_URL;
+mongoose.Promise = global.Promise;
+mongoose.connect(url);
+
 requireDir('./src/models');
 
 // Routes
