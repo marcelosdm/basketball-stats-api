@@ -14,7 +14,7 @@ app.use(cors());
 // });
 // requireDir('./src/models');
 
-const url = process.env.DATABASE_URL;
+const url = process.env.MONGODB_URI;
 mongoose.Promise = global.Promise;
 mongoose.connect(url);
 
